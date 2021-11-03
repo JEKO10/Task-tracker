@@ -1,10 +1,16 @@
 import React from "react";
+import Button from "./Button";
 
-function Header() {
+function Header({ isAddOpen, setIsAddOpen }) {
   return (
     <header className="header">
       <h1>Task Tracker</h1>
-      <button>Add</button>
+      <Button
+        color={isAddOpen ? "red" : "green"}
+        text={isAddOpen ? "Close" : "Add"}
+        setIsAddOpen={setIsAddOpen}
+        isAddOpen={isAddOpen}
+      />
     </header>
   );
 }
