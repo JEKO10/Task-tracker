@@ -5,18 +5,18 @@ function AddTask() {
     <div className="add">
       <form>
         <div>
-          <label htmlFor="">Task</label>
+          <label>Task</label>
           <input type="text" placeholder="Add task" />
         </div>
         <div>
-          <label htmlFor="">Day and Time</label>
+          <label>Day and Time</label>
           <input type="text" placeholder="Add Day and Time" />
         </div>
         <div className="reminder">
-          <label htmlFor="">Reminder*</label>
-          <input type="checkbox" />
+          <label>Reminder*</label>
+          <input type="checkbox" id="checkbox" />
         </div>
-        <input type="submit" />
+        <input type="submit" value="Save Task" />
         <p>* double tap on task</p>
       </form>
     </div>
