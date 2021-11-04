@@ -43,7 +43,13 @@ function AddTask({ addTask }) {
         </div>
         <div className="reminder">
           <label>Reminder*</label>
-          <input type="checkbox" id="checkbox" />
+          <input
+            type="checkbox"
+            id="checkbox"
+            checked={reminder}
+            value={reminder}
+            onClick={(e) => setReminder(e.currentTarget.checked)}
+          />
         </div>
         <input type="submit" value="Save Task" />
         <p>* double tap on task</p>

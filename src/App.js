@@ -44,12 +44,24 @@ function App() {
     setTasks(newTasks);
   };
 
+  const reminderToggle = (id) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id ? { ...task, reminder: !task.reminder } : task
+      )
+    );
+  };
+
   return (
     <div className="main">
       <Header isAddOpen={isAddOpen} setIsAddOpen={setIsAddOpen} />
       {isAddOpen ? <AddTask addTask={addTask} /> : ""}
       {tasks.length > 0 ? (
-        <Tasks tasks={tasks} deleteTask={deleteTask} />
+        <Tasks
+          tasks={tasks}
+          deleteTask={deleteTask}
+          reminderToggle={reminderToggle}
+        />
       ) : (
         "There is no more tasks!"
       )}
