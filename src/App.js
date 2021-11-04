@@ -33,11 +33,26 @@ function App() {
     },
   ]);
 
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 1000) + 1;
+    const newTask = { id, ...task };
+    setTasks([...tasks, newTask]);
+  };
+
+  const deleteTask = (id) => {
+    const newTasks = tasks.filter((task) => task.id !== id);
+    setTasks(newTasks);
+  };
+
   return (
     <div className="main">
       <Header isAddOpen={isAddOpen} setIsAddOpen={setIsAddOpen} />
-      {isAddOpen ? <AddTask /> : ""}
-      {tasks.length > 0 ? <Tasks tasks={tasks} /> : "There is no more tasks!"}
+      {isAddOpen ? <AddTask addTask={addTask} /> : ""}
+      {tasks.length > 0 ? (
+        <Tasks tasks={tasks} deleteTask={deleteTask} />
+      ) : (
+        "There is no more tasks!"
+      )}
     </div>
   );
 }
