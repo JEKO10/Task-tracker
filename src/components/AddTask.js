@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function AddTask({ addTask }) {
   const [text, setText] = useState("");
   const [day, setDay] = useState("");
-  const [reminder, setReminder] = useState();
+  const [reminder, setReminder] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -41,14 +41,14 @@ function AddTask({ addTask }) {
             onChange={(e) => setDay(e.target.value)}
           />
         </div>
-        <div className="reminder">
+        <div>
           <label>Reminder*</label>
           <input
             type="checkbox"
             id="checkbox"
             checked={reminder}
             value={reminder}
-            onClick={(e) => setReminder(e.currentTarget.checked)}
+            onChange={(e) => setReminder(e.currentTarget.checked)}
           />
         </div>
         <input type="submit" value="Save Task" />
