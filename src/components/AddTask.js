@@ -38,6 +38,7 @@ function AddTask({ addTask }) {
             type="text"
             placeholder="Add Day and Time"
             value={day}
+            maxLength="47"
             onChange={(e) => setDay(e.target.value)}
           />
         </div>

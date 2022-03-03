@@ -9,15 +9,15 @@ function Task({ task, deleteTask, reminderToggle }) {
         reminderToggle(task.id);
       }}
     >
-      <h3>
-        {task.text}
+      <div>
+        <h3>{task.text}</h3>
         <FaTimes
           style={{ color: "red", cursor: "pointer" }}
           onClick={() => {
             deleteTask(task.id);
           }}
         />
-      </h3>
+      </div>
       <p>{task.day}</p>
     </div>
   );
