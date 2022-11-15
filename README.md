@@ -13,25 +13,19 @@
 
 ## Project task
 
-One of my first apps made in react. You are able to add, remove, edit and filter completed tasks.
+One of my first apps made in react. I got inspiration from a YouTube video.
 
 ## Project overview
 
-Add, edit, remove and mark completed tasks. You can display only completed/uncompleted tasks. I used filter method for deleting and filtering completed/uncompleted tasks. After adding 3 or more tasks, button for clearing all tasks appears. I used local storage for setting and getting added tasks. Website is fully responsive.
+You are able to add and remove tasks, add and remove reminder on tasks. I used local storage for setting 4 default tasks. Website is fully responsive.
 
 ## Built with
 
 - React
-- Sass
+- CSS
 - React Icons
 - GitHub Pages
 
 ## Live preview
 
 [Click for live preview](https://jeko10.github.io/Task-tracker/)
-
-
-
-
-
-

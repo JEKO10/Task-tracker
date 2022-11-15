@@ -70,6 +70,7 @@
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  word-break: break-all;
 }
 
 .task > div {
@@ -78,8 +79,8 @@
   align-items: center;
 }
 
-.task h3 {
-  padding-right: 10px;
+.task p {
+  margin-right: 30px;
 }
 
 .reminder {

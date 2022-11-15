@@ -12,7 +12,7 @@ function Task({ task, deleteTask, reminderToggle }) {
       <div>
         <h3>{task.text}</h3>
         <FaTimes
-          style={{ color: "red", cursor: "pointer" }}
+          style={{ color: "red", cursor: "pointer", marginLeft: "10px" }}
           onClick={() => {
             deleteTask(task.id);
           }}
