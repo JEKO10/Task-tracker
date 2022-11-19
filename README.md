@@ -17,7 +17,7 @@ One of my first apps made in react. I got inspiration from a YouTube video.
 
 ## Project overview
 
-You are able to add and remove tasks, add and remove reminder on tasks. I used local storage for setting 4 default tasks. Website is fully responsive.
+You are able to add and remove tasks and add and remove reminder on tasks. I used local storage for setting 4 default tasks. The website is fully responsive.
 
 ## Built with
 
